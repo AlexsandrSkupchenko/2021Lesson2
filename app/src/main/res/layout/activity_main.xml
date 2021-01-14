@@ -8,22 +8,20 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        />
+        android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="@dimen/main_marginStart10dp"
+        android:layout_marginEnd="@dimen/marginEnd10dp"
         android:orientation="horizontal">
         <Button
             android:id="@+id/button_start"
-            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/_startCalc"
-            android:textSize="@dimen/button_text"/>
+            android:layout_width="@dimen/layoutWidth_0dp" />
     </LinearLayout>
     <Space
         android:layout_width="match_parent"

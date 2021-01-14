@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="button_text" />
+    <dimen name="main_marginStart10dp">10dp</dimen>
+    <dimen name="marginEnd10dp">10dp</dimen>
+    <dimen name="layoutWidth_0dp">0dp</dimen>
+    <dimen name="marginStart_3dp">3dp</dimen>
+    <dimen name="layoutMargin_2dp">2dp</dimen>
+    <dimen name="marginStart_5dp">5dp</dimen>
+    <dimen name="marginEnd_3dp">3dp</dimen>
 </resources>
