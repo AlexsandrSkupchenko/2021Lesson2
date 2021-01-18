@@ -1,6 +1,6 @@
 package com.example.calculatorapp;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.EditText;
 
 import java.util.Locale;
+
 
 public class CalcVer2 extends AppCompatActivity implements View.OnClickListener {
     private EditText textEdit;
