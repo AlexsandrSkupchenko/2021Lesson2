@@ -81,83 +81,107 @@ public class CalcVer2 extends AppCompatActivity implements View.OnClickListener 
                 setTextCounter(textEdit, dataKey.getDataKey9());
                 break;
             case (R.id.button_summ):
-                if (textEdit.getText().length() != 0) {
-                    input1 = Float.parseFloat(textEdit.getText() + "");
-                    Addition = true;
-                    decimal = false;
-                    textEdit.setText(null);
-                }
+                buttonSum();
                 break;
             case (R.id.button_multiplication):
-                if (textEdit.getText().length() != 0) {
-                    input1 = Float.parseFloat(textEdit.getText() + "");
-                    Multiplication = true;
-                    decimal = false;
-                    textEdit.setText(null);
-                }
+                buttonMult();
                 break;
             case (R.id.button_subtraction):
-                if (textEdit.getText().length() != 0) {
-                    input1 = Float.parseFloat(textEdit.getText() + "");
-                    Subtract = true;
-                    decimal = false;
-                    textEdit.setText(null);
-                }
+                buttonSub();
                 break;
-
             case (R.id.button_division):
-                if (textEdit.getText().length() != 0) {
-                    input1 = Float.parseFloat(textEdit.getText() + "");
-                    Division = true;
-                    decimal = false;
-                    textEdit.setText(null);
-                }
+                buttonDiv();
                 break;
-
             case (R.id.button_clear):
-                textEdit.setText("");
-                input1 = 0.0;
-                input2 = 0.0;
+                buttonClear();
                 break;
-
             case (R.id.button_point):
-                if (decimal) {
-                    //do nothing or you can show the error
-                } else {
-                    textEdit.setText(textEdit.getText() + ".");
-                    decimal = true;
-                }
+                buttonPoint();
                 break;
-
             case (R.id.button_total):
-                if (Addition || Subtract || Multiplication || Division) {
-                    input2 = Float.parseFloat(textEdit.getText() + "");
-                }
-
-                if (Addition) {
-
-                    textEdit.setText(input1 + input2 + "");
-                    Addition = false;
-                }
-
-                if (Subtract) {
-
-                    textEdit.setText(input1 - input2 + "");
-                    Subtract = false;
-                }
-
-                if (Multiplication) {
-                    textEdit.setText(input1 * input2 + "");
-                    Multiplication = false;
-                }
-
-                if (Division) {
-                    textEdit.setText(input1 / input2 + "");
-                    Division = false;
-                }
+                buttonTotal();
                 break;
         }
+    }
 
+    private void buttonSum() {
+        if (textEdit.getText().length() != 0) {
+            input1 = Float.parseFloat(textEdit.getText() + "");
+            Addition = true;
+            decimal = false;
+            textEdit.setText(null);
+        }
+    }
+
+    private void buttonMult() {
+        if (textEdit.getText().length() != 0) {
+            input1 = Float.parseFloat(textEdit.getText() + "");
+            Multiplication = true;
+            decimal = false;
+            textEdit.setText(null);
+        }
+    }
+
+    private void buttonSub() {
+        if (textEdit.getText().length() != 0) {
+            input1 = Float.parseFloat(textEdit.getText() + "");
+            Subtract = true;
+            decimal = false;
+            textEdit.setText(null);
+        }
+    }
+
+    private void buttonDiv() {
+        if (textEdit.getText().length() != 0) {
+            input1 = Float.parseFloat(textEdit.getText() + "");
+            Division = true;
+            decimal = false;
+            textEdit.setText(null);
+        }
+    }
+
+    private void buttonClear() {
+        textEdit.setText("");
+        input1 = 0.0;
+        input2 = 0.0;
+    }
+
+    private void buttonPoint() {
+        if (decimal) {
+        } else {
+            textEdit.setText(textEdit.getText() + ".");
+            decimal = true;
+        }
+    }
+
+
+    @SuppressLint("SetTextI18n")
+    private void buttonTotal() {
+        if (Addition || Subtract || Multiplication || Division) {
+            input2 = Float.parseFloat(textEdit.getText() + "");
+        }
+
+        if (Addition) {
+
+            textEdit.setText(input1 + input2 + "");
+            Addition = false;
+        }
+
+        if (Subtract) {
+
+            textEdit.setText(input1 - input2 + "");
+            Subtract = false;
+        }
+
+        if (Multiplication) {
+            textEdit.setText(input1 * input2 + "");
+            Multiplication = false;
+        }
+
+        if (Division) {
+            textEdit.setText(input1 / input2 + "");
+            Division = false;
+        }
     }
 
     private void initEdit() {
