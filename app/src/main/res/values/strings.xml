@@ -17,4 +17,5 @@
     <string name="_12">+</string>
     <string name="_13">-</string>
     <string name="_14">=</string>
+    <string name="clear">C</string>
 </resources>

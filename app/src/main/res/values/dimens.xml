@@ -8,4 +8,5 @@
     <dimen name="layoutMargin_2dp">2dp</dimen>
     <dimen name="marginStart_5dp">5dp</dimen>
     <dimen name="marginEnd_3dp">3dp</dimen>
+    <dimen name="textSize50">50dp</dimen>
 </resources>
