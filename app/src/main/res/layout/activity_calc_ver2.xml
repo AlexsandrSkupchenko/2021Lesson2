@@ -1,149 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ecf0f1"
+android:orientation="vertical"
+tools:context="com.javapapers.calculator.MainActivity">
+
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_column="5"
-    android:layout_margin="@dimen/layoutMargin_2dp"
-    android:gravity="center"
-    android:background="@drawable/backfon"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.3"
     android:orientation="horizontal">
 
     <EditText
         android:id="@+id/editText"
-        android:layout_height="@dimen/EditText_hegt_300"
-        android:focusableInTouchMode="false"
-        android:gravity="center"
-        android:textSize="@dimen/textSize50" />
+        style="@style/styleTextedit"/>
+</LinearLayout>
 
-    <TableRow
-        android:layout_width="wrap_content"
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.2"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_1"
+        android:text="@string/_1"
+        style="@style/styleBottom" />
+
+    <Button
+        android:id="@+id/button_2"
+        style="@style/styleBottom"
+        android:text="@string/_2" />
+
+    <Button
+        android:id="@+id/button_3"
+        style="@style/styleBottom"
+        android:text="@string/_3" />
+
+    <Button
+        android:id="@+id/button_division"
+        android:text="@string/_11"
+        style="@style/styleBottFunc"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.2"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_6"
+        style="@style/styleBottom"
+        android:text="@string/_4" />
+
+    <Button
+        android:id="@+id/button_7"
+        style="@style/styleBottom"
+        android:text="@string/_5" />
+
+    <Button
+        android:id="@+id/button_8"
+        android:text="@string/_6"
+        style="@style/styleBottom" />
+
+    <Button
+        android:id="@+id/button_subtraction"
+        android:text="@string/_13"
+        style="@style/styleBottFunc" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.2"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_11"
+        android:text="@string/_7"
+        style="@style/styleBottom" />
+
+    <Button
+        android:id="@+id/button_12"
+        android:text="@string/_8"
+        style="@style/styleBottom" />
+
+    <Button
+        android:id="@+id/button_13"
+        android:text="@string/_9"
+        style="@style/styleBottom"/>
+
+    <Button
+        android:id="@+id/button_multiplication"
+        android:text="@string/_10"
+        style="@style/styleBottFunc" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.2"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_point"
+        android:text="@string/_point"
+        style="@style/styleBottFunc" />
+
+    <Button
+        android:id="@+id/button_0"
+        android:text="@string/_0"
+        style="@style/styleBottom"/>
+
+
+    <Button
+        android:id="@+id/button_summ"
+        android:text="@string/_12"
+        style="@style/styleBottFunc" />
+    <Button
+        android:id="@+id/button_clear"
+        android:text="@string/clear"
+        style="@style/styleBottFinal" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
-        <Button
-            android:id="@+id/button_1"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginStart="@dimen/marginStart_3dp"
-            android:text="@string/_1"
-            android:textSize="@dimen/button_text"/>
-        <Button
-            android:id="@+id/button_2"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:text="@string/_2"
-            android:textSize="@dimen/button_text"/>
-        <Button
-            android:id="@+id/button_3"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:text="@string/_3"
-            android:textSize="@dimen/button_text"/>
-        <Button
-            android:id="@+id/button_multiplication"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:layout_weight="0.5"
-            android:text="@string/_10"
-            android:textSize="@dimen/button_text"/>
-        <Button
-            android:id="@+id/button_division"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/marginStart_5dp"
-            android:layout_marginEnd="@dimen/marginEnd_3dp"
-            android:layout_weight="0.5"
-            android:text="@string/_11" />
-    </TableRow>
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-        <Button
-            android:id="@+id/button_6"
-            android:layout_height="wrap_content"
-            android:text="@string/_4"
-            android:layout_marginStart="@dimen/marginStart_3dp" />
-        <Button
-            android:id="@+id/button_7"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:text="@string/_5"/>
-        <Button
-            android:id="@+id/button_8"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:text="@string/_6"/>
-        <Button
-            android:id="@+id/button_summ"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:layout_weight="0.5"
-            android:text="@string/_12"/>
-        <Button
-            android:id="@+id/button_subtraction"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/marginStart_5dp"
-            android:layout_weight="0.5"
-            android:text="@string/_13"
-            android:layout_marginEnd="@dimen/marginEnd_3dp"/>
-    </TableRow>
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_weight="0.2"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/button_11"
-            android:layout_height="wrap_content"
-            android:text="@string/_7"
-            android:layout_marginStart="@dimen/marginStart_3dp"/>
-        <Button
-            android:id="@+id/button_12"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:text="@string/_8"/>
-        <Button
-            android:id="@+id/button_13"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:text="@string/_9"/>
 
         <Button
             android:id="@+id/button_total"
-            android:layout_height="61dp"
-            android:layout_marginEnd="@dimen/marginEnd_3dp"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:layout_weight="0.5"
-            android:text="@string/_14"/>
-    </TableRow>
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="left">
-        <Button
-            android:id="@+id/button_0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_span="2"
-            android:text="@string/_0"
-            android:layout_marginStart="@dimen/marginStart_3dp"/>
-        <Button
-            android:id="@+id/button_point"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:text="@string/_point"/>
-        <Button
-            android:id="@+id/button_clear"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/main_marginStart10dp"
-            android:layout_weight="0.5"
-            android:text="@string/clear"
-            android:layout_marginEnd="@dimen/marginEnd_3dp"
-            android:textSize="@dimen/button_text"/>
-    </TableRow>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-</TableLayout>
+            android:text="@string/_14"
+            style="@style/styleBottFinal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -10,4 +10,6 @@
     <dimen name="marginEnd_3dp">3dp</dimen>
     <dimen name="textSize50">50dp</dimen>
     <dimen name="EditText_hegt_300">300dp</dimen>
+    <dimen name="radius">30dp</dimen>
+    <dimen name="textSize20sp">20sp</dimen>
 </resources>
