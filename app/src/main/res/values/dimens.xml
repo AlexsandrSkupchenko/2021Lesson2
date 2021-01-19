@@ -4,11 +4,16 @@
     <dimen name="main_marginStart10dp">10dp</dimen>
     <dimen name="marginEnd10dp">10dp</dimen>
     <dimen name="layoutWidth_0dp">0dp</dimen>
+    <dimen name="layoutWidth_025dp">0.25</dimen>
     <dimen name="marginStart_3dp">3dp</dimen>
     <dimen name="layoutMargin_2dp">2dp</dimen>
     <dimen name="marginStart_5dp">5dp</dimen>
+    <dimen name="layoutMarginWeight02">0.2</dimen>
+    <dimen name="layoutMarginWeight03">0.3</dimen>
+    <dimen name="margin_1dp">1dp</dimen>
     <dimen name="marginEnd_3dp">3dp</dimen>
     <dimen name="textSize50">50dp</dimen>
+    <dimen name="textSize30">30sp</dimen>
     <dimen name="EditText_hegt_300">300dp</dimen>
     <dimen name="radius">30dp</dimen>
     <dimen name="textSize20sp">20sp</dimen>

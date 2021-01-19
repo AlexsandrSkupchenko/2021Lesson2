@@ -18,38 +18,61 @@
     <style name="styleBottom">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">1dp</item>
-        <item name="android:layout_weight">0.25</item>
+        <item name="android:layout_margin">@dimen/margin_1dp</item>
+        <item name="android:layout_weight">@dimen/layoutWidth_025dp</item>
         <item name="android:textColor">@color/textColorAll</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/textSize30</item>
         <item name="backgroundTint">@color/btn_clr</item>
     </style>
 
     <style name="styleBottFunc">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">1dp</item>
-        <item name="android:layout_weight">0.25</item>
+        <item name="android:layout_margin">@dimen/margin_1dp</item>
+        <item name="android:layout_weight">@dimen/layoutWidth_025dp</item>
         <item name="android:textColor">@color/textColorAll</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/textSize30</item>
         <item name="backgroundTint">@color/textColorFunction</item>
     </style>
 
     <style name="styleBottFinal">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">1dp</item>
-        <item name="android:layout_weight">0.25</item>
+        <item name="android:layout_margin">@dimen/margin_1dp</item>
+        <item name="android:layout_weight">@dimen/layoutWidth_025dp</item>
         <item name="android:textColor">@color/textColorAll</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/textSize30</item>
         <item name="backgroundTint">@color/finalFunc</item>
     </style>
 
     <style name="styleTextedit">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/textSize30</item>
         <item name="background">@color/editTextColor</item>
+    </style>
+
+    <style name="styleSecLoy">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize30</item>
+        <item name="android:layout_weight">@dimen/layoutMarginWeight02</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="styLoyEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">@dimen/layoutMarginWeight03</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="styMainLoy">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">@dimen/layoutMarginWeight03</item>
+        <item name="android:background">@color/editTextColor</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
 </resources>

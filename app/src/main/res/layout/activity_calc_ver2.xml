@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#ecf0f1"
-android:orientation="vertical"
-tools:context="com.javapapers.calculator.MainActivity">
+style="@style/styMainLoy">
 
 <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.3"
-    android:orientation="horizontal">
+    style="@style/styLoyEdit">
 
     <EditText
         android:id="@+id/editText"
         style="@style/styleTextedit"/>
 </LinearLayout>
 
-
-
 <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.2"
-    android:orientation="horizontal">
+    style="@style/styleSecLoy">
 
     <Button
         android:id="@+id/button_1"
@@ -50,10 +36,7 @@ tools:context="com.javapapers.calculator.MainActivity">
 </LinearLayout>
 
 <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.2"
-    android:orientation="horizontal">
+    style="@style/styleSecLoy">
 
     <Button
         android:id="@+id/button_6"
@@ -78,10 +61,7 @@ tools:context="com.javapapers.calculator.MainActivity">
 </LinearLayout>
 
 <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.2"
-    android:orientation="horizontal">
+    style="@style/styleSecLoy">
 
     <Button
         android:id="@+id/button_11"
@@ -106,10 +86,7 @@ tools:context="com.javapapers.calculator.MainActivity">
 </LinearLayout>
 
 <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.2"
-    android:orientation="horizontal">
+    style="@style/styleSecLoy">
 
     <Button
         android:id="@+id/button_point"
@@ -133,10 +110,7 @@ tools:context="com.javapapers.calculator.MainActivity">
 
 </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:orientation="horizontal">
+        style="@style/styleSecLoy">
 
         <Button
             android:id="@+id/button_total"
@@ -144,7 +118,6 @@ tools:context="com.javapapers.calculator.MainActivity">
             style="@style/styleBottFinal" />
 
     </LinearLayout>
-
 
 </LinearLayout>
 
