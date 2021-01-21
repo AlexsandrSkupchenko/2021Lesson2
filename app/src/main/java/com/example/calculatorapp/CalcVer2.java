@@ -4,6 +4,7 @@ package com.example.calculatorapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,7 @@ public class CalcVer2 extends AppCompatActivity implements View.OnClickListener 
     private Button button_subtraction;
     private Button button_total;
     private Button button_clear;
+    private Button button_btngoaway;
     private double input1 = 0;
     private double input2 = 0;
     boolean Addition, Subtract, Multiplication, Division, decimal;
@@ -102,6 +104,8 @@ public class CalcVer2 extends AppCompatActivity implements View.OnClickListener 
                 buttonTotal();
                 break;
         }
+        Intent runSettings = new Intent(CalcVer2.this, SecondActivity.class);
+        startActivity(runSettings);
     }
 
     private void buttonSum() {
@@ -207,6 +211,7 @@ public class CalcVer2 extends AppCompatActivity implements View.OnClickListener 
         button_subtraction.setOnClickListener(this);
         button_point.setOnClickListener(this);
         button_clear.setOnClickListener(this);
+        button_btngoaway.setOnClickListener(this);
     }
 
     private void findView() {
@@ -228,10 +233,12 @@ public class CalcVer2 extends AppCompatActivity implements View.OnClickListener 
         button_division = findViewById(R.id.button_division);
         button_clear = findViewById(R.id.button_clear);
         button_total = findViewById(R.id.button_total);
+        button_btngoaway = findViewById(R.id.button_goaway);
     }
 
     private void setTextCounter(TextView textCounter, int counter) {
         textCounter.append(String.format(Locale.getDefault(), "%d", counter));
     }
+
 }
 

@@ -116,8 +116,20 @@ style="@style/styMainLoy">
             android:id="@+id/button_total"
             android:text="@string/_14"
             style="@style/styleBottFinal" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/styleSecLoy">
+
+        <Button
+            android:id="@+id/button_goaway"
+            android:text="@string/secondDisplay"
+            style="@style/styleBottFinal" />
 
     </LinearLayout>
 
+
 </LinearLayout>
+
+
 
