@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -39,6 +40,9 @@ public class CalcVer2 extends AppCompatActivity implements View.OnClickListener 
     private double input2 = 0;
     boolean Addition, Subtract, Multiplication, Division, decimal;
 
+    private void setTheme() {
+            this.setTheme(R.style.Theme_CalculatorApp2);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,7 @@ public class CalcVer2 extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_calc_ver2);
         initEdit();
     }
+
 
 
     @SuppressLint("SetTextI18n")
